@@ -24,7 +24,7 @@ import javax.inject.Inject
  * @author Ипатов Никита
  * @since 1.0
  */
-class NotesRepository(@Inject val db : AppDatabase) {
+class NotesRepository @Inject constructor( val db : AppDatabase) {
 
 
     /**

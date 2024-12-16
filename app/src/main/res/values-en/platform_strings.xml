@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="no_notes_now">There are no notes yet</string>
+    <string name="download_approvement">Download confirmation</string>
+    <string name="download_notice">Number of schedule files to download: %1$d. Do you want to download them?</string>
+    <string name="download_ok">Download</string>
+    <string name="download_cancel">Cancel</string>
+    <string name="for_group">For group:</string>
+    <string name="last_chosen">Last chosen</string>
+    <string name="not_mentioned">Not mentioned</string>
+    <string name="updated">Updated:</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">PATC schedule for group on day</string>
+    <string name="schedule_missing">There is no list of classes</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="rounded_corners">Rounded corners</string>
+    <string name="appearance">Appearance</string>
+    <string name="day">Day</string>
+    <string name="dynamic_colors">Use dynamic colors</string>
+    <string name="permission_for_photo">Permission is required to take a photo</string>
+    <string name="share_app">Share app</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="or">Or</string>
+    <string name="share_link">Share link</string>
+    <string name="note_choose_photo_descr">Select a photo for note</string>
+    <string name="note_discard_descr">Discard changes</string>
+    <string name="note_set_date_descr">Chose a date</string>
+    <string name="note_clear_group_descr">Clear group</string>
+    <string name="note_theme_clear_descr">Clear theme</string>
+    <string name="note_text_clear_descr">Clear text</string>
+    <string name="note_take_photo_descr">Take a photo for note</string>
+    <string name="note_photo_preview_descr">Photo preview</string>
+    <string name="note_image_clear_descr">Clear photo</string>
+    <string name="note_save_descr">Save note</string>
+    <string name="main_tabs_descr">Tabs of schedule and times</string>
+    <string name="notes_add_descr">Add note</string>
+    <string name="notes_filter_descr">Filter notes</string>
+    <string name="schedule_item_notes_descr">Open notes</string>
+    <string name="schedule_item_show_descr">Show the schedule</string>
+    <string name="share_app_qr_descr">App store`s QR code</string>
+    <string name="widget_settings_previes_descr">Look of the widget</string>
+    <string name="filter_close_descr">Close and apply</string>
+    <string name="filter_start_date_descr">Choose start date</string>
+    <string name="filter_end_date_descr">Choose end date</string>
+    <string name="note_item_photo_descr">Note`s photo</string>
+    <string name="note_item_checked_descr">Note has been choosen</string>
+    <string name="times_monday">Times for monday</string>
+    <string name="times_other">Times from tuesday to friday</string>
+    <string name="update_descr">Update the schedule</string>
+    <string name="days_group_clear_descr">Clear group</string>
+    <string name="days_teacher_clear_descr">Clear teacher</string>
+    <string name="notes_selection_cancel_descr">"Сancel notes` selection "</string>
+</resources>

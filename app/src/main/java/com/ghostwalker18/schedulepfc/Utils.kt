@@ -10,6 +10,12 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import java.util.Calendar
 
+/**
+ * В этом модуле содержаться различные вспомогательные методы, использующиеся по всему приложению.
+ *
+ * @author Ипатов Никита
+ * @since 1.0
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 class Utils {

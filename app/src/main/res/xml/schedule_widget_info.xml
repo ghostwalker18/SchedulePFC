@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:configure="com.ghostwalker18.schedulePATC.WidgetSettingsActivity"
+    android:widgetFeatures="reconfigurable|configuration_optional"
+    android:initialKeyguardLayout="@layout/schedule_widget_wrapper"
+    android:initialLayout="@layout/schedule_widget_wrapper"
+    android:minWidth="250dp"
+    android:minHeight="250dp"
+    android:previewImage="@drawable/widget_light_today"
+    android:previewLayout="@layout/schedule_widget_wrapper"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="4"
+    android:targetCellHeight="4"
+    android:updatePeriodMillis="10800000"
+    android:widgetCategory="home_screen" />

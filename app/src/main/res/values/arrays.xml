@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+
+    <string-array name="theme_entries">
+        <item>Системная</item>
+        <item>Темная</item>
+        <item>Светлая</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>night</item>
+        <item>day</item>
+    </string-array>
+
+    <string-array name="language_entries">
+        <item>Системный</item>
+        <item>Русский</item>
+        <item>Белорусский</item>
+        <item>Украинский</item>
+        <item>Казахстанский</item>
+        <item>Английский</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>system</item>
+        <item>ru</item>
+        <item>be</item>
+        <item>uk</item>
+        <item>kk</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="schedule_style_entries">
+        <item>Вместе</item>
+        <item>В отдельном окне</item>
+    </string-array>
+
+    <string-array name="schedule_style_values">
+        <item>in_fragment</item>
+        <item>in_activity</item>
+    </string-array>
+
+    <string-array name="download_entries">
+        <item>Всех корпусов</item>
+        <item>Первого корпуса</item>
+        <item>Второго корпуса</item>
+        <item>Третьего корпуса</item>
+    </string-array>
+
+    <string-array name="download_values">
+        <item>all</item>
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+    </string-array>
+</resources>

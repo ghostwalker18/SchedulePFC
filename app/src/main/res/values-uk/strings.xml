@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Розклад ПАТТ</string>
+    <string name="settings">Налаштування</string>
+    <string name="days_tab">Розклад занять</string>
+    <string name="times_tab">Розклад дзвінків</string>
+    <string name="day_table">Розклад на</string>
+    <string name="monday">Понеділок</string>
+    <string name="tuesday">Вівторок</string>
+    <string name="wednesday">Середа</string>
+    <string name="thursday">Четвер</string>
+    <string name="friday">П\'ятниця</string>
+    <string name="today">Сьогодні</string>
+    <string name="app_settings">Додаток</string>
+    <string name="option_theme">Тема</string>
+    <string name="option_add_teacher_search">Пошук за викладачем</string>
+    <string name="date">Дата</string>
+    <string name="number">Пара</string>
+    <string name="room">Каб</string>
+    <string name="times">Час</string>
+    <string name="subject">Предмет</string>
+    <string name="group_choice_text">Виберіть групу:</string>
+    <string name="teacher_choice_text">Виберіть викладача:</string>
+    <string name="share">Поділитися</string>
+    <string name="nothing_to_share">Поки що нема чим ділитися</string>
+    <string name="back">Назад</string>
+    <string name="forward">Уперед</string>
+    <string name="teacher">Викладач.</string>
+    <string name="schedule_style">Режим відображення розкладу</string>
+    <string name="option_do_not_update_times">Не оновлювати дзвінки</string>
+    <string name="download_schedule">Завантажити файл розкладу</string>
+    <string name="schedule_settings">Розклад</string>
+    <string name="option_language">Мова</string>
+    <string name="schedule_download_error">Помилка при скачуванні розкладу</string>
+    <string name="schedule_parsing_error">Помилка при обробці розкладу</string>
+    <string name="schedule_parsing_status">Обробка розкладу</string>
+    <string name="processing_completed_status">Розклад успішно оновлено</string>
+    <string name="schedule_download_status">Скачування розкладу</string>
+    <string name="schedule">Розклад</string>
+    <string name="notes_activity">Нотатки</string>
+    <string name="edit_notes_activity">Додати / редагувати нотатку</string>
+    <string name="note_theme">Тема нотатки</string>
+    <string name="choose_date">Виберіть дату</string>
+    <string name="filters">Фільтри</string>
+    <string name="start_date">Початкова дата:</string>
+    <string name="end_date">Кінцева дата:</string>
+    <string name="text">Текст</string>
+    <string name="photo_error">Не вдалося завантажити фотографію</string>
+    <string name="group">Група</string>
+    <string name="theme">Тема</string>
+    <string name="delete">Видалити</string>
+    <string name="edit">Редагувати</string>
+    <string name="edit_note">Редагувати замітку</string>
+    <string name="add_note">Нова замітка</string>
+    <string name="gallery_access_denied">Немає дозволу на доступ до фото</string>
+    <string name="network_settings">Мережа</string>
+    <string name="option_enable_caching">Увімкнути кешування</string>
+    <string name="option_download_for">Завантажувати розклад для</string>
+</resources>

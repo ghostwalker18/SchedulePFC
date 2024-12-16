@@ -20,16 +20,15 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 
-@Module
 abstract class AppDatabase : RoomDatabase() {
     abstract fun lessonDao() : LessonDao
     abstract fun noteDao() : NoteDao
 
-
     companion object {
-        @Provides
         fun getInstance(@ApplicationContext context : Context) : AppDatabase{
             val callback = object : Callback(){
                 override fun onCreate(db: SupportSQLiteDatabase) {

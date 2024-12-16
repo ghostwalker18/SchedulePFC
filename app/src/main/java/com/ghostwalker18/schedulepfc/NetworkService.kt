@@ -17,6 +17,8 @@ package com.ghostwalker18.schedulepfc
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.preference.PreferenceManager
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,9 +39,7 @@ import javax.inject.Inject
  */
 @Module
 @InstallIn(SingletonComponent::class)
-class NetworkService (@ApplicationContext val context: Context,
-                      val baseUri : String,
-                      @Inject val preferences: SharedPreferences){
+class NetworkService {
 
     private val sizeOfCache: Long = 10 * 1024 * 1024
 
@@ -48,7 +48,9 @@ class NetworkService (@ApplicationContext val context: Context,
      * @return API сайта для доступа к скачиванию файлов расписания
      */
     @Provides
-    fun getScheduleAPI(): ScheduleNetworkAPI {
+    fun getScheduleAPI(@ApplicationContext context: Context): ScheduleNetworkAPI {
+        val baseUri = "https://ptgh.onego.ru"
+        val preferences = PreferenceManager.getDefaultSharedPreferences(context)
         val apiBuilder = Retrofit.Builder()
             .baseUrl(baseUri)
             .callbackExecutor(Executors.newFixedThreadPool(3))

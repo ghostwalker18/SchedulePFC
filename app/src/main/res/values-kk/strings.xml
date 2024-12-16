@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Кесте ПАКТ</string>
+    <string name="settings">Параметрлер</string>
+    <string name="days_tab">Сабақ кестесі</string>
+    <string name="times_tab">Қоңырау кестесі</string>
+    <string name="day_table">Кесте</string>
+    <string name="monday">Дүйсенбі</string>
+    <string name="tuesday">Сейсенбі</string>
+    <string name="wednesday">Сәрсенбі</string>
+    <string name="thursday">Бейсенбі</string>
+    <string name="friday">Жұма</string>
+    <string name="today">Бүгін</string>
+    <string name="app_settings">Қолдану</string>
+    <string name="option_theme">Тақырып</string>
+    <string name="option_add_teacher_search">Мұғалім бойынша іздеу</string>
+    <string name="date">Күні</string>
+    <string name="number">Нөмірі</string>
+    <string name="room">Каб</string>
+    <string name="times">Уақыт</string>
+    <string name="subject">Тақырып</string>
+    <string name="group_choice_text">Топты таңдаңыз:</string>
+    <string name="teacher_choice_text">Мұғалімді таңдаңыз:</string>
+    <string name="share">Бөлісу</string>
+    <string name="nothing_to_share">Бөлісетін ештеңе жоқ</string>
+    <string name="back">Артқа</string>
+    <string name="forward">Алға</string>
+    <string name="teacher">Мұғалім</string>
+    <string name="schedule_style">Кестені көрсету режимі</string>
+    <string name="option_do_not_update_times">Қоңырауларды жаңартпаңыз</string>
+    <string name="download_schedule">Кесте файлын жүктеп алыңыз</string>
+    <string name="schedule_settings">Кесте</string>
+    <string name="option_language">Тіл</string>
+    <string name="schedule_download_error">Кестені жүктеу кезінде қате</string>
+    <string name="schedule_parsing_error">Кестені өңдеу кезінде қате</string>
+    <string name="schedule_parsing_status">Кестені өңдеу</string>
+    <string name="processing_completed_status">Кесте сәтті жаңартылды</string>
+    <string name="schedule_download_status">Кестені жүктеу</string>
+    <string name="schedule">Кесте</string>
+    <string name="notes_activity">Ескертпелер</string>
+    <string name="edit_notes_activity">Жазбаны қосу / өңдеу</string>
+    <string name="note_theme">Ескерту тақырыбы</string>
+    <string name="choose_date">Күнді таңдаңыз</string>
+    <string name="filters">Сүзгілер</string>
+    <string name="start_date">Бастапқы күн:</string>
+    <string name="end_date">Соңғы күн:</string>
+    <string name="text">Мәтін</string>
+    <string name="photo_error">Фотосуретті жүктеу мүмкін болмады</string>
+    <string name="group">Топ</string>
+    <string name="theme">Тақырып</string>
+    <string name="delete">Жою</string>
+    <string name="edit">Өңдеу</string>
+    <string name="edit_note">Жазбаны өңдеңіз</string>
+    <string name="add_note">Жаңа ескерту</string>
+    <string name="gallery_access_denied">Фотосуретке кіруге рұқсат жоқ</string>
+    <string name="network_settings">Желі</string>
+    <string name="option_enable_caching">Кэштеуді қосыңыз</string>
+    <string name="option_download_for">Кестені жүктеу</string>
+</resources>

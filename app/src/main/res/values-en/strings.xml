@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="app_name">PATC Schedule</string>
+    <string name="settings">Settings</string>
+    <string name="days_tab">Lessons</string>
+    <string name="times_tab">Times</string>
+    <string name="day_table">Schedule for</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="today">Today</string>
+    <string name="app_settings">App</string>
+    <string name="option_theme">Theme</string>
+    <string name="option_add_teacher_search">Teacher search</string>
+    <string name="date">Date</string>
+    <string name="number">Num.</string>
+    <string name="room">Room</string>
+    <string name="times">Time</string>
+    <string name="subject">Subject</string>
+    <string name="group_choice_text">Choose group:</string>
+    <string name="teacher_choice_text">Choose teacher:</string>
+    <string name="share">Share</string>
+    <string name="nothing_to_share">Nothing to share yet</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="teacher">Teacher</string>
+    <string name="schedule_style">Schedule mode</string>
+    <string name="option_do_not_update_times">Do not update times</string>
+    <string name="download_schedule">Download schedule file</string>
+    <string name="schedule_settings">Schedule</string>
+    <string name="option_language">Language</string>
+    <string name="schedule_download_error">Schedule downloading error</string>
+    <string name="schedule_parsing_error">Schedule parsing error</string>
+    <string name="schedule_parsing_status">Schedule parsing</string>
+    <string name="processing_completed_status">Schedule successfully updated</string>
+    <string name="schedule_download_status">Schedule downloading</string>
+    <string name="schedule">Schedule</string>
+    <string name="notes_activity">Notes</string>
+    <string name="edit_notes_activity">Add / edit note</string>
+    <string name="note_theme">Note\'s theme</string>
+    <string name="choose_date">Select a date</string>
+    <string name="filters">Filters</string>
+    <string name="start_date">Start date:</string>
+    <string name="end_date">End date:</string>
+    <string name="text">Text</string>
+    <string name="photo_error">Failed to upload photo</string>
+    <string name="group">Group</string>
+    <string name="theme">Theme</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="edit_note">Edit note</string>
+    <string name="add_note">New note</string>
+    <string name="gallery_access_denied">There is no permission to access the photo</string>
+    <string name="network_settings">Network</string>
+    <string name="option_enable_caching">Enable caching</string>
+    <string name="option_download_for">Download schedule for</string>
+</resources>

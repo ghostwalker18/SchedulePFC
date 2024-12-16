@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="no_notes_now">Пока нет заметок</string>
+    <string name="download_approvement">Подтверждение скачивания</string>
+    <string name="download_notice">Количество файлов расписания для скачивания: %1$d. Вы хотите скачать их?</string>
+    <string name="download_ok">Скачать</string>
+    <string name="download_cancel">Отмена</string>
+    <string name="for_group">Для группы:</string>
+    <string name="last_chosen">Последняя выбранная</string>
+    <string name="not_mentioned">Не указано</string>
+    <string name="updated">Обновлено:</string>
+    <string name="schedule_missing">Список занятий отсутствует</string>
+    <string name="day">День</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="dynamic_colors">Использовать динамические цвета</string>
+    <string name="rounded_corners">Скругленные углы</string>
+    <string name="add_widget">Добавить виджет</string>
+    <string name="app_widget_description">Расписание ПАТТ на день для группы</string>
+    <string name="permission_for_photo">Требуется разрешение, чтобы сделать фото</string>
+    <string name="share_app">Поделиться приложением</string>
+    <string name="scan_qr_code">Отсканируйте QR код</string>
+    <string name="or">Или</string>
+    <string name="share_link">Поделитесь ссылкой</string>
+    <string name="rustore_link" translatable="false">
+        https://www.rustore.ru/catalog/app/com.ghostwalker18.schedulePATC
+    </string>
+    <string name="note_choose_photo_descr">Выберите фото для заметки</string>
+    <string name="note_discard_descr">Отменить изменения</string>
+    <string name="note_set_date_descr">Выберите дату</string>
+    <string name="note_clear_group_descr">Очистить группу</string>
+    <string name="note_theme_clear_descr">Очистить тему</string>
+    <string name="note_text_clear_descr">Очистить текст</string>
+    <string name="note_take_photo_descr">Сделать фото для заметки</string>
+    <string name="note_photo_preview_descr">Предпросмотр фото для заметки</string>
+    <string name="note_image_clear_descr">Очистить фото</string>
+    <string name="note_save_descr">Сохранить заметку</string>
+    <string name="main_tabs_descr">Вкладки расписание и звонки</string>
+    <string name="notes_add_descr">Добавить заметку</string>
+    <string name="notes_filter_descr">Фильтровать заметки</string>
+    <string name="schedule_item_notes_descr">Открыть заметки</string>
+    <string name="schedule_item_show_descr">Показать расписание</string>
+    <string name="share_app_qr_descr">QR код страницы в магазине</string>
+    <string name="widget_settings_previes_descr">Внешний вид виджета</string>
+    <string name="filter_close_descr">Закрыть и применить</string>
+    <string name="filter_start_date_descr">Выберите начальную дату</string>
+    <string name="filter_end_date_descr">Выберите конечную дату</string>
+    <string name="note_item_photo_descr">Фото заметки</string>
+    <string name="note_item_checked_descr">Заметка выбрана</string>
+    <string name="times_monday">Звонки на понедельник</string>
+    <string name="times_other">Звонки со вторника по пятницу</string>
+    <string name="update_descr">Обновить расписание</string>
+    <string name="days_group_clear_descr">Очистить группу</string>
+    <string name="days_teacher_clear_descr">Очистить преподавателя</string>
+    <string name="notes_selection_cancel_descr">Отменить выделение заметок</string>
+</resources>

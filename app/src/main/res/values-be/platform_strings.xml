@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string name="no_notes_now">Пакуль няма нататак</string>
+    <string name="download_approvement">Пацверджанне запампоўкі</string>
+    <string name="download_notice">Колькасць файлаў раскладу для запампоўкі: %1$d. вы хочаце спампаваць іх?</string>
+    <string name="download_ok">Скачаць</string>
+    <string name="download_cancel">Адмена</string>
+    <string name="for_group">Для групы:</string>
+    <string name="last_chosen">Апошняя абраная</string>
+    <string name="not_mentioned">Не пазначана</string>
+    <string name="updated">Абноўлены:</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">Расклад ПАТТ на дзень для групы</string>
+    <string name="schedule_missing">Спіс заняткаў адсутнічае</string>
+    <string name="tomorrow">Заўтра</string>
+    <string name="rounded_corners">Скругленыя вуглы</string>
+    <string name="appearance">Пастава</string>
+    <string name="day">Дзень</string>
+    <string name="dynamic_colors">Выкарыстоўваць дынамічныя колеру</string>
+    <string name="permission_for_photo">Патрабуецца дазвол, каб зрабіць фота</string>
+    <string name="share_app">Падзяліцца дадаткам</string>
+    <string name="scan_qr_code">Адскануйце QR код</string>
+    <string name="or">Або</string>
+    <string name="share_link">Падзяліцеся спасылкай</string>
+    <string name="note_choose_photo_descr">Выберыце фота для нататкі</string>
+    <string name="note_discard_descr">Адмяніць змены</string>
+    <string name="note_set_date_descr">Выберыце дату</string>
+    <string name="note_clear_group_descr">Ачысціць групу</string>
+    <string name="note_theme_clear_descr">Ачысціць тэму</string>
+    <string name="note_text_clear_descr">Ачысціць тэкст</string>
+    <string name="note_take_photo_descr">Зрабіць фота для нататкі</string>
+    <string name="note_photo_preview_descr">Прадпрагляд фота для нататкі</string>
+    <string name="note_image_clear_descr">Ачысціць фота</string>
+    <string name="note_save_descr">Захаваць нататку</string>
+    <string name="main_tabs_descr">Ўкладкі расклад і званкі</string>
+    <string name="notes_add_descr">Дадаць нататку</string>
+    <string name="notes_filter_descr">Фільтраваць нататкі</string>
+    <string name="schedule_item_notes_descr">Адкрыць нататкі</string>
+    <string name="schedule_item_show_descr">Паказаць расклад</string>
+    <string name="share_app_qr_descr">QR код старонкі ў краме</string>
+    <string name="widget_settings_previes_descr">Знешні выгляд фішкі</string>
+    <string name="filter_close_descr">Закрити та застосувати</string>
+    <string name="filter_start_date_descr">Выберыце пачатковую дату</string>
+    <string name="filter_end_date_descr">Выберыце канчатковую дату</string>
+    <string name="note_item_photo_descr">Фота нататкі</string>
+    <string name="note_item_checked_descr">Нататка абраная</string>
+    <string name="times_monday">Званкі на панядзелак</string>
+    <string name="times_other">Званкі з аўторка па пятніцу</string>
+    <string name="update_descr">Абнавіць расклад</string>
+    <string name="days_group_clear_descr">Ачысціць групу</string>
+    <string name="days_teacher_clear_descr">Ачысціць выкладчыка</string>
+    <string name="notes_selection_cancel_descr">Адмяніць вылучэнне нататак</string>
+</resources>

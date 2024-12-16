@@ -1,3 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
 <resources>
-    <string name="app_name">SchedulePFC</string>
+    <string name="app_name">Расписание ПАТТ</string>
+    <string name="schedule">Расписание</string>
+    <string name="settings">Настройки</string>
+    <string name="days_tab">Расписание занятий</string>
+    <string name="times_tab">Расписание звонков</string>
+    <string name="day_table">Расписание на</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="today">Сегодня</string>
+    <string name="app_settings">Приложение</string>
+    <string name="option_theme">Тема</string>
+    <string name="option_add_teacher_search">Поиск по преподавателю</string>
+    <string name="date">Дата</string>
+    <string name="number">Пара</string>
+    <string name="room">Каб</string>
+    <string name="times">Время</string>
+    <string name="subject">Предмет</string>
+    <string name="group_choice_text">Выберите группу:</string>
+    <string name="teacher_choice_text">Выберите преподавателя:</string>
+    <string name="share">Поделиться</string>
+    <string name="nothing_to_share">Пока нечем делиться</string>
+    <string name="back">Назад</string>
+    <string name="forward">Вперед</string>
+    <string name="teacher">Препод.</string>
+    <string name="schedule_style">Режим отображения расписания</string>
+    <string name="option_do_not_update_times">Не обновлять звонки</string>
+    <string name="download_schedule">Скачать файл расписания</string>
+    <string name="schedule_settings">Расписание</string>
+    <string name="option_language">Язык</string>
+    <string name="schedule_download_error">Ошибка при скачивании расписания</string>
+    <string name="schedule_parsing_error">Ошибка при обработке расписания</string>
+    <string name="schedule_download_status">Скачивание расписания</string>
+    <string name="schedule_parsing_status">Обработка расписания</string>
+    <string name="processing_completed_status">Расписание успешно обновлено</string>
+    <string name="notes_activity">Заметки</string>
+    <string name="edit_notes_activity">Добавить / редактировать заметку</string>
+    <string name="note_theme">Тема заметки</string>
+    <string name="choose_date">Выберите дату</string>
+    <string name="filters">Фильтры</string>
+    <string name="start_date">Начальная дата:</string>
+    <string name="end_date">Конечная дата:</string>
+    <string name="text">Текст</string>
+    <string name="photo_error">Не удалось загрузить фотографию</string>
+    <string name="gallery_access_denied">Нет разрешения на доступ к фото</string>
+    <string name="group">Группа</string>
+    <string name="theme">Тема</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="edit_note">Редактировать заметку</string>
+    <string name="add_note">Новая заметка</string>
+    <string name="network_settings">Сеть</string>
+    <string name="option_enable_caching">Включить кэширование</string>
+    <string name="option_download_for">Скачивать расписание для</string>
 </resources>

@@ -19,6 +19,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 val keystorePropertiesFile = rootProject.file("/signing.properties")
@@ -27,7 +28,7 @@ if (keystorePropertiesFile.exists())
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
 android {
-    namespace = "com.ghostwalker18.schedulePATC"
+    namespace = "com.ghostwalker18.schedulepfc"
     compileSdk = 34
 
     bundle {
