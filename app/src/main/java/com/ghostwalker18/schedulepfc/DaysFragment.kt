@@ -26,8 +26,7 @@ import android.widget.ArrayAdapter
 import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import androidx.preference.PreferenceManager
+import androidx.fragment.app.viewModels
 import com.ghostwalker18.schedulepfc.databinding.FragmentDaysBinding
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.function.Consumer
@@ -48,14 +47,12 @@ class DaysFragment: Fragment(),
     private val binding get() = _binding!!
     @Inject lateinit var repository: ScheduleRepository
     private val days: MutableList<ScheduleItemFragment> = ArrayList()
-    private lateinit var state: ScheduleState
-    private lateinit var prefs: SharedPreferences
+    private val state: ScheduleState by viewModels()
+    @Inject lateinit var prefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        prefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
         prefs.registerOnSharedPreferenceChangeListener(this)
-        state = ViewModelProvider(requireActivity())[ScheduleState::class.java]
         if (savedInstanceState == null) {
             days.add(ScheduleItemFragment.newInstance(R.string.monday))
             days.add(ScheduleItemFragment.newInstance(R.string.tuesday))

@@ -27,12 +27,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+
+import javax.inject.Inject;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import dagger.hilt.android.AndroidEntryPoint;
 
 /**
  * Этот класс представляет собой экран настроек виджета приложения
@@ -40,11 +44,13 @@ import androidx.preference.PreferenceFragmentCompat;
  * @author  Ипатов Никита
  * @since 1.0
  */
+@AndroidEntryPoint
 public class WidgetSettingsActivity
         extends AppCompatActivity
         implements View.OnClickListener,
         SharedPreferences.OnSharedPreferenceChangeListener {
    private SettingsFragment fragment;
+   @Inject ScheduleRepository repository;
    private SharedPreferences preferences;
    private ImageView preview;
    private int widgetID = AppWidgetManager.INVALID_APPWIDGET_ID;
@@ -91,7 +97,7 @@ public class WidgetSettingsActivity
       preferences.edit()
               .putBoolean("isEdited", true)
               .commit();
-      ScheduleWidget.updateAppWidget(this, appWidgetManager, widgetID);
+      ScheduleWidget.updateAppWidget(this, repository, appWidgetManager, widgetID);
       finish();
    }
 
@@ -139,10 +145,10 @@ public class WidgetSettingsActivity
       preview.setImageResource(imageId);
    }
 
-   public static class SettingsFragment
+   @AndroidEntryPoint
+   public  class SettingsFragment
            extends PreferenceFragmentCompat
            implements SharedPreferences.OnSharedPreferenceChangeListener{
-      private final ScheduleRepository repository = ScheduleApp.getInstance().getScheduleRepository();
       public int widgetId;
       private SharedPreferences preferences;
       private ListPreference groupChoicePreference;

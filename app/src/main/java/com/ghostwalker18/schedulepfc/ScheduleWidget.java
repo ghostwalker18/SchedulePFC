@@ -23,8 +23,12 @@ import android.content.SharedPreferences;
 import android.widget.RemoteViews;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
+import javax.inject.Inject;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
+import dagger.hilt.android.AndroidEntryPoint;
 
 /**
  * Этот класс реализует функциональность виджета приложения по показу расписания на заданный день.
@@ -32,12 +36,13 @@ import androidx.lifecycle.Observer;
  * @author Ипатов Никита
  * @since 1.0
  */
+@AndroidEntryPoint
 public class ScheduleWidget
         extends AppWidgetProvider {
-   static final ScheduleRepository repository = ScheduleApp.getInstance().getScheduleRepository();
+   @Inject ScheduleRepository repository;
    static final SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
 
-   static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
+   static void updateAppWidget(Context context, ScheduleRepository repository, AppWidgetManager appWidgetManager,
                                int appWidgetId) {
       repository.update();
 
@@ -112,7 +117,7 @@ public class ScheduleWidget
    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
       // There may be multiple widgets active, so update all of them
       for (int appWidgetId : appWidgetIds) {
-         updateAppWidget(context, appWidgetManager, appWidgetId);
+         updateAppWidget(context, repository, appWidgetManager, appWidgetId);
       }
    }
 

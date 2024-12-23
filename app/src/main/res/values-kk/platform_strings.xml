@@ -63,4 +63,10 @@
     <string name="days_group_clear_descr">Топты тазарту</string>
     <string name="days_teacher_clear_descr">Мұғалімді тазарту</string>
     <string name="notes_selection_cancel_descr">Жазбаларды бөлектеуді болдырмау</string>
+    <string name="preview_next_descr">Келесі фотосуретті көрсету</string>
+    <string name="preview_previous_descr">Алдыңғы фотосуретті көрсету</string>
+    <string name="preview_photo_descr">Ағымдағы фотосурет</string>
+    <string name="preview_image_clear_descr">Фотосуретті тазалау</string>
+    <string name="photoview_back_descr">Фотосуретті бүктеңіз</string>
+    <string name="photoview_share_descr">Фотосуретті бөлісу</string>
 </resources>

@@ -23,6 +23,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.ImageView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doAfterTextChanged
@@ -73,7 +74,7 @@ class NotesActivity : AppCompatActivity() {
     private var isDeleteChanged = true
     private var isShareChanged = true
     private lateinit var binding : ActivityNotesBinding
-    private lateinit var model: NotesModel
+    private val model: NotesModel by viewModels()
     private lateinit var filter: NotesFilterFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -82,7 +83,6 @@ class NotesActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        model = ViewModelProvider(this)[NotesModel::class.java]
 
         intent.extras?.run {
             group = getString("group")
@@ -208,7 +208,7 @@ class NotesActivity : AppCompatActivity() {
     private fun resetSelection() {
         for (position in selectedNotes.keys) {
             val item = binding.notes
-                .findViewHolderForAdapterPosition(position) as NoteAdapter.ViewHolder
+                .findViewHolderForAdapterPosition(position) as NoteViewHolder
             item.isSelected  = false
             listener.onNoteUnselected(selectedNotes[position]!!, position)
         }

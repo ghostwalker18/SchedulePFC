@@ -27,6 +27,7 @@ import android.widget.ArrayAdapter
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.ghostwalker18.schedulepfc.databinding.FragmentFilterBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,13 +51,8 @@ class NotesFilterFragment : Fragment() {
     @Inject lateinit var repository: ScheduleRepository
     private var _binding: FragmentFilterBinding? = null
     private val binding get() = _binding!!
-    private lateinit var model: NotesModel
+    private val model: NotesModel by viewModels()
     var listener: VisibilityListener? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        model = ViewModelProvider(requireActivity())[NotesModel::class.java]
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

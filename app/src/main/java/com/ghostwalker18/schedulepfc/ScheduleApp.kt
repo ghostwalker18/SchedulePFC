@@ -36,9 +36,6 @@ import javax.inject.Inject
 @HiltAndroidApp
 class ScheduleApp: Application(), OnSharedPreferenceChangeListener {
     @Inject lateinit var preferences: SharedPreferences
-    @Inject lateinit var database: AppDatabase
-    @Inject lateinit var scheduleRepository: ScheduleRepository
-    @Inject lateinit var notesRepository: NotesRepository
 
     override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
         when(key){

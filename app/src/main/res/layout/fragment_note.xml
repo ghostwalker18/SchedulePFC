@@ -56,12 +56,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <ImageView
-            android:id="@+id/image"
+        <include
+            android:id="@+id/note_photos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/note_item_photo_descr"/>
+            android:layout_height="200dp"
+            layout="@layout/fragment_preview"/>
 
         <TextView
             android:id="@+id/error"

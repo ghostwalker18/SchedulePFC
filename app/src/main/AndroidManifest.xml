@@ -114,9 +114,14 @@
         </activity>
 
         <activity
+            android:name=".PhotoViewActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".EditNoteActivity"
             android:exported="false"
             android:label="@string/add_note"
+            android:screenOrientation="portrait"
             android:parentActivityName=".NotesActivity">
 
             <meta-data
