@@ -39,7 +39,7 @@ class EditNoteModel @Inject constructor(
     private val noteThemesMediator = MediatorLiveData<Array<String>>()
     private val theme = MutableLiveData("")
     private val text = MutableLiveData("")
-    private val photoID = MutableLiveData<Uri?>()
+    private val photoIDs = MutableLiveData<ArrayList<Uri>?>()
     private val date = MutableLiveData(Calendar.getInstance())
     private val group = MutableLiveData<String>(scheduleRepository.getSavedGroup())
     private var themes: LiveData<Array<String>> = MutableLiveData()
@@ -64,8 +64,8 @@ class EditNoteModel @Inject constructor(
                 date.value = it.date
                 text.value = it.text
                 theme.value = it.theme
-                if (it.photoID != null)
-                    photoID.value = Uri.parse(it.photoID)
+                if (it.photoIDs != null)
+                    photoIDs.value = it.photoIDs
             }
         }
     }
@@ -98,20 +98,24 @@ class EditNoteModel @Inject constructor(
         return scheduleRepository.getGroups()
     }
 
-    /**
-     * Этот метод позволяет задать ID фотографии, прикрепляемой к заметке.
-     * @param id uri фотографии
-     */
-    fun setPhotoID(id: Uri?) {
-        photoID.value = id
+    fun addPhotoID(id: Uri) {
+        val currentUris = photoIDs.value
+        currentUris?.add(id)
+        photoIDs.value = currentUris
+    }
+
+    fun removePhotoID(id: Uri) {
+        val currentUris = photoIDs.value
+        currentUris?.remove(id)
+        photoIDs.value = currentUris
     }
 
     /**
      * Этот метод позволяет получить ID фотографии, прикрепленной к заметке.
      * @return
      */
-    fun getPhotoID(): LiveData<Uri?> {
-        return photoID
+    fun getPhotoIDs(): LiveData<ArrayList<Uri>?> {
+        return photoIDs
     }
 
     /**
@@ -176,14 +180,6 @@ class EditNoteModel @Inject constructor(
     }
 
     /**
-     * Этот метод позволяет получить id редактируемой заметки.
-     * @return id заметки
-     */
-    fun getNoteID(): Int {
-        return note.value!!.id
-    }
-
-    /**
      * Этот метод позволяет сохранить заметку.
      */
     fun saveNote() {
@@ -193,14 +189,15 @@ class EditNoteModel @Inject constructor(
             noteToSave.group = group.value!!
             noteToSave.theme = theme.value
             noteToSave.text = text.value!!
-            if (photoID.value != null) {
-                noteToSave.photoID = photoID.value.toString()
+            if (photoIDs.value != null) {
+                noteToSave.photoIDs = photoIDs.value
                 try {
-                    ScheduleApp.getInstance().contentResolver.takePersistableUriPermission(
-                        photoID.value!!, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    for (uri: Uri in photoIDs.value!!)
+                        ScheduleApp.getInstance().contentResolver.takePersistableUriPermission(
+                            uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 } catch (ignored: Exception) { /*Not required*/}
             } else
-                noteToSave.photoID = null
+                noteToSave.photoIDs = null
             if (isEdited)
                 notesRepository.updateNote(noteToSave)
             else

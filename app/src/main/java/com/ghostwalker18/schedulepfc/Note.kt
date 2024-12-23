@@ -14,6 +14,7 @@
 
 package com.ghostwalker18.schedulepfc
 
+import android.net.Uri
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -34,7 +35,7 @@ data class Note(
     @ColumnInfo(name = "noteGroup") var group : String,
     @ColumnInfo(name = "noteTheme") var theme: String?,
     @ColumnInfo(name = "noteText") var text: String,
-    @ColumnInfo(name = "notePhotoID") var photoID: String?
+    @ColumnInfo(name = "notePhotoIDs") var photoIDs: ArrayList<Uri>?
 ){
     override fun toString(): String {
         val resources = ScheduleApp.getInstance().resources

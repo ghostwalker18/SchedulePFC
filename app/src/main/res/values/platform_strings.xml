@@ -66,4 +66,10 @@
     <string name="days_group_clear_descr">Очистить группу</string>
     <string name="days_teacher_clear_descr">Очистить преподавателя</string>
     <string name="notes_selection_cancel_descr">Отменить выделение заметок</string>
+    <string name="preview_next_descr">Показать следующую фотографию</string>
+    <string name="preview_previous_descr">Показать предыдущую фотография</string>
+    <string name="preview_photo_descr">Текущая фотография</string>
+    <string name="preview_image_clear_descr">Очистить фото</string>
+    <string name="photoview_back_descr">Свернуть фото</string>
+    <string name="photoview_share_descr">Поделиться фото</string>
 </resources>

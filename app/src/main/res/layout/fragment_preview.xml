@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:paddingHorizontal="10dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_36"
+        android:contentDescription="@string/preview_previous_descr"
+        app:layout_constraintBottom_toBottomOf="@id/next"
+        app:layout_constraintEnd_toStartOf="@id/preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete"/>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/baseline_no_photography_72"
+        android:contentDescription="@string/preview_photo_descr"
+        app:layout_constraintBottom_toBottomOf="@+id/next"
+        app:layout_constraintEnd_toStartOf="@id/next"
+        app:layout_constraintStart_toEndOf="@id/previous"
+        app:layout_constraintTop_toTopOf="@+id/next"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:paddingHorizontal="10dp"
+        android:src="@drawable/baseline_keyboard_arrow_right_36"
+        android:contentDescription="@string/preview_next_descr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/preview"
+        app:layout_constraintTop_toBottomOf="@+id/delete"/>
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/baseline_clear_36"
+        android:contentDescription="@string/preview_image_clear_descr"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

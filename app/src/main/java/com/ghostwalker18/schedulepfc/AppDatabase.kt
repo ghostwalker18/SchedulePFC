@@ -15,21 +15,20 @@
 package com.ghostwalker18.schedulepfc
 
 import android.content.Context
+import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.components.SingletonComponent
 
+@Database(entities = [Lesson::class, Note:: class], version = 1)
+@TypeConverters(DateConverters::class, PhotoURIArrayConverters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun lessonDao() : LessonDao
     abstract fun noteDao() : NoteDao
 
     companion object {
-        fun getInstance(@ApplicationContext context : Context) : AppDatabase{
+        fun getInstance(context : Context) : AppDatabase{
             val callback = object : Callback(){
                 override fun onCreate(db: SupportSQLiteDatabase) {
                     super.onCreate(db)
